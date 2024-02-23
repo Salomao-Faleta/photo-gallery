@@ -21,7 +21,7 @@ function Page() {
 
     }
 
-    function closeModal{
+    function closeModal(){
         setShowModal(false);
     }
 
@@ -40,7 +40,7 @@ function Page() {
             </section>
 
             {showModal && 
-                <Modal image={imageOfModal} closeModal={}/>
+                <Modal image={imageOfModal} closeModal={closeModal}/>
             }
 
         </div>
