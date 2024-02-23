@@ -12,7 +12,7 @@ function Page() {
     const [imageOfModal, setImageOfModal] = useState('');
 
     function opneModal(id:number){
-        const photo = PhotoList.find(item => item.id === 1);
+        const photo = PhotoList.find(item => item.id === id);
 
         if(photo){
             setImageOfModal(photo.url);
